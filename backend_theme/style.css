@@ -1,0 +1,373 @@
+@CHARSET "UTF-8";
+html.busy, html.busy * {
+	cursor: wait !important;
+}
+
+html {
+	overflow-y:scroll;
+}
+
+body, table, td, th, tr, p, h1, h2, form, pre{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body,p,td
+{
+	font-family:tahoma, verdana, arial;
+	font-size:11px;
+	color:#29344E;
+}
+
+td
+{
+	padding:5px;
+}
+th
+{
+	padding:5px;
+}
+
+
+body
+{
+	background-color:#EEF1F6;
+	padding-bottom:50px;
+}
+
+a
+{
+	font-family:tahoma, verdana, arial;
+	font-size:11px;
+	color:#2F2F2F;
+	text-decoration:none;
+}
+
+a:hover
+{
+	font-family:tahoma, verdana, arial;
+	font-size:11px;
+	color:#2F2F2F;
+	text-decoration:underline;
+}
+
+h1
+{
+	font-size:2em;
+	margin-right:0.5em;
+}
+
+input,select,textarea
+{
+	font-family:tahoma, verdana, arial;
+	font-size:11px;
+	color:#2F2F2F;
+	border:1px solid silver;
+	resize: none;
+}
+
+input:focus, textarea:focus, select:focus
+{
+	border:1px solid black;
+}
+
+fieldset{
+	color:#2F2F2F;
+	border:1px solid silver;
+	padding:10px;
+}
+
+/*
+.disabled
+{
+	filter:alpha(opacity='40');
+	-moz-opacity:0.4;
+}*/
+
+.alert
+{
+	color:red;
+	font-weight:bold;
+}
+#header
+{
+	display:block;
+	background-color:#5F7CBD;
+	padding:0.3em;
+	padding-left:20px;
+}
+
+#header h1{
+	color:white;
+	text-shadow: 3px 3px 7px #283E6E;
+	white-space:nowrap;
+	margin:0;
+}
+
+.actionHead .count {
+	border:1px solid silver;
+	background-color:white;
+	margin-right: 10px;
+	padding:1px;
+}
+
+#action *{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#action
+{
+	padding:1.4em;
+	padding-bottom:0px;
+	padding-top:1em;
+}
+
+#action .actionHead{
+	background-color:#D7DDF0;
+	padding:10px;
+	text-align:right;
+	border-bottom:1px solid #EEF1F6;
+	font-weight:bold;
+	overflow:hidden;
+	white-space:nowrap;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#D7DDF0'); /* for IE */
+	background: -ms-linear-gradient(top,  #fff,  #D7DDF0); /* for IE10 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#D7DDF0)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #D7DDF0); /* for firefox 3.6+ */
+}
+#action .actionHead *:focus {
+	outline: none;
+}
+div.actionHead > form > p > input, div.actionHead > form > p > select {
+	vertical-align: top;
+}
+
+div.actionHead > form > p > label{
+	position:relative;
+	top:1px;
+	vertical-align: top;
+}
+div.actionHead > div.buttonbar {
+	float:left;
+}
+div.actionHead > div.buttonbar > * {
+	float:left;
+	margin-right:7px;
+}
+
+#action > table
+{
+	width:100%;
+}
+#action caption
+{
+	text-align:left;
+	background-color:#D7DDF0;
+	font-weight:bold;
+	padding:10px;
+	border-bottom: 1px solid white;
+}
+
+#action th
+{
+	background-color:#D7DDF0;
+	text-align:left;
+	border-left: 1px solid #EEF1F6;
+}
+#action th:first-child
+{
+	border-left: 0px;
+}
+#action tfoot th:first-child
+{
+	border-top: 1px solid #EEF1F6;
+}
+
+#action #dataTable tbody tr:hover
+{
+	background-color:#E9EAF0 !important;
+}
+
+#action th.subheadline{
+	padding-left:12px;
+	border-bottom:1px solid white
+}
+
+#action th.pagernav{
+	text-align:right;
+	font-weight:normal;
+	padding-right:8px;
+	padding-left:12px;
+	border-bottom:1px solid white
+}
+
+.actionHead h1
+{
+	margin-top:-2px;
+	float:left;
+	font-size:1.5em;
+	font-weight:bold;
+	color:#5B74AC;
+}
+
+#action h2
+{
+	font-size:1.3em;
+}
+
+/* Menu */
+div#menu_horiz {
+	background-color: #D7DDF0;
+	width: 100%;
+	margin: 0;
+	height:25px;
+	white-space:nowrap;
+	overflow:hidden;
+	border-bottom: 4px solid #5F7CBD;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#D7DDF0'); /* for IE */
+	background: -ms-linear-gradient(top,  #fff,  #D7DDF0); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#D7DDF0)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #D7DDF0); /* for firefox 3.6+ */
+}
+
+div#menu_horiz ul {
+	margin: 0;
+	padding: 0;
+	height:25px;
+	padding-left: 0.8em;
+	padding-right: 14px;
+}
+
+/* menu list items */
+div#menu_horiz li {
+	 float: left;
+	 list-style: none;
+	 margin: 0;
+	 border-right: 1px solid #FFF;
+}
+div#menu_horiz li:last-child {
+	border-right: 0;
+}
+div#menu_horiz ul select, div#menu_horiz ul input{
+	margin: 4px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div#menu_horiz a {
+	padding: .5em 1.5em .5em 1.5em;
+	margin: 0;
+	text-decoration: none;
+	color: #5F5F5F;
+	display: block;
+	font-weight:bold;
+}
+
+div#menu_horiz li a:hover {
+	background-color: #F1F3FA;
+}
+div#menu_horiz li a.active {
+	color:#5F7CBD;
+}
+
+div.ripeInfo{
+	display:none;
+	overflow:hidden;
+	overflow-y:auto;
+	height:200px;
+	background-color:white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding:5px;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+form.cmxform fieldset {
+	margin: 0;
+	margin-bottom:10px;
+	padding: 0;
+	border-style: none none none;
+	width:auto;
+}
+form.cmxform fieldset:last-child{
+	margin-bottom:0px;
+}
+form.cmxform fieldset select, form.cmxform fieldset input{
+	width: 190px;
+	margin-right: 20px;
+}
+
+form.cmxform legend {
+	padding: 0 2px;
+	margin:0;
+	font-weight: bold;
+}
+form.cmxform  ol li label {
+	display: inline-block;
+	line-height: 1.8;
+	vertical-align: top;
+	padding-left: 3px;
+}
+
+form.cmxform fieldset ol {
+	margin: 0;
+	padding: 0;
+	background-color: #F0F2F9;
+}
+
+form.cmxform fieldset ol > li {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	line-height: 1.8;
+	border-bottom:1px solid white;
+	/*white-space: nowrap;*/
+}
+form.cmxform fieldset ol > li > ol >li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	line-height:inherit;
+	border-bottom:0;
+	/*white-space: nowrap;*/
+}
+form.cmxform fieldset ol > li:last-child{
+	border-bottom:0;
+	marrgin-bottom:0;
+}
+form.cmxform fieldset fieldset {
+	border: none;
+	margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend {
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+form.cmxform fieldset fieldset label {
+	display: block;
+	width: auto;
+}
+form.cmxform em {
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+form.cmxform > div {
+	display: block;
+	color: black;
+	line-height: 1.5;
+	font-size: 11px;
+	border: 1px solid transparent;
+}
+form.cmxform ol > li > label {
+	width: 75px; /* Width of labels */
+}
+form.cmxform fieldset fieldset label {
+	margin-left: 83px; /* Width plus 3 (html space) */
+}

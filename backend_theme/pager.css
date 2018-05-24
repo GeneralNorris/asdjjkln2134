@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+a.pager_back, a.pager_next{
+	padding: 2px 32px;
+	color: rgb(153, 0, 0);
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid silver;
+	margin:2px;
+	text-decoration: none;
+}
+span.pager_back, span.pager_next{
+	padding: 2px 32px;
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid silver;
+	margin:2px;
+	text-decoration: none;
+}
+
+
+.pager_start, .pager_end{
+	color: #555555;
+	padding:2px;
+	background-color:white;
+	border:1px solid silver;
+	margin:2px;
+}
+
+a.pager_link{
+	color: #555555;
+	padding:2px;
+	background-color:white;
+	border:1px solid silver;
+	margin:2px;
+}
+
+span.pager_link{
+	z-index:1;
+	position:relative;
+	color: #990000;
+	padding:6px;
+	font-weight: bold; 
+	background-color:white;
+	border:1px solid silver;
+	margin:2px;
+}
+	
+	

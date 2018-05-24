@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+#menu_horiz,#header{display:none;}
+.actionHead{padding-left:0 !important;}
+img{display:none;}
+
+table, td, th{margin:0; padding:0 2px 0 0 !important}
+#dataTable{  border-collapse:collapse; empty-cells:hide}
+#dataTable>thead>tr>th, #dataTable>tbody>tr>td{width:auto !important;border-bottom:1px solid black }
+
+#action{margin:0; padding:0}
+
+@page { size:20.0cm 14.0cm; margin:0.7cm 0.1cm 0.5cm 0.1cm; }
+.noprint{display:none}
+#action * { border-radius: 0; }
